@@ -1,22 +1,14 @@
 /* setting values */
 @import url(https://fonts.googleapis.com/css?family=Outfit);
 
-
-:root{
-    --white: hsl(0, 0%, 100%);
-    --lgray: hsl(212, 45%, 89%);
-    --gblue: hsl(220, 15%, 55%);
-    --dblue: hsl(218, 44%, 22%);
-    --font15:12px;
-    --weight400:500;
-    --weight700:700;
-}
-
-
-
-*{
-    font-family: 'Outfit';
-   
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lgray: hsl(212, 45%, 89%);
+  --gblue: hsl(220, 15%, 55%);
+  --dblue: hsl(218, 44%, 22%);
+  --font15: 12px;
+  --weight400: 500;
+  --weight700: 700;
 }
 
 body,
@@ -29,102 +21,53 @@ h6,
 p,
 div,
 span,
-img{
-    margin:0;
-    padding:0;
+img {
+  margin: 0;
+  padding: 0;
 }
 
-html{
-    width: 100%;
-    height: 100%;
-}
-/* end */
-
-/* colors */
-.white{
-    color:var(--white);
-}
-.lgray{
-    color:var(--lgray);
-}
-.gblue{
-    color:var(--gblue);
-}
-.dblue{
-    color:var(--dblue);
-}
-/* end of colors */
-
-
-
-body{
-    height: 100%;
-    width: 100%;
-    background: var(--lgray);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.weight400{
-    font-weight: 500;
-}
-.weight700{
-    font-weight: 800;
-    
-}
-.font15{
-    font-size: var(--font15);
-}
-.font18{
-    font-size: var(--font18,17px);
+html {
+  width: 100%;
+  height: 100%;
 }
 
-.text-align-center{
+body {
+  height: 100vh;
+  background: var(--lgray);
+  display: grid;
+  place-items: center;
+  font-family: 'Outfit';
+}
+
+.wrapper {
+  flex-direction: column;
+  border-radius: 0.8rem;
+  background-color: var(--white);
+  padding: 16px 16px 40px 16px;
+  width: 288px;
+  height: 443px;
+}
+
+.qr-image {
+  height: 288px;
+  width: 288px;
+  border-radius: 0.5rem;
+  margin-bottom: 24px;
+}
+
+section{
+    padding:0px 16px;
+}
+
+h1{
+    font-size: 22px;
+    font-weight: 700;
     text-align: center;
+    color: var(--dblue);
+    margin-bottom: 16px;
 }
-.text-align-justify{
-    text-align: justify;
-}
-.grid{
-    display: grid;
-}
-.flex{
-    display:flex;
-}
-.center{
-    align-items: center;
-    justify-content: center;
-}
-.wrapper{
-    flex-direction: column;
-    border-radius: 0.8rem;
-    background-color: var(--white);
-    padding:0.8rem;
-}
-.gap{
-    gap:1rem;
-}
-.img_sizing{
-
-    width: 18rem;
-height: 18rem;
-border-radius: 0.5rem;
-}
-
-/* end */
-
-.img-container{
-    width:fit-content;
-  
-    
-}
-.header{
-    width:17rem;
-
-}
-.footer{
-    flex-direction: column;
-    width: 16rem;
-    margin-bottom: 1.5rem;
-    
+p{
+    font-size: 15px;
+    text-align: center;
+    color:var(--gblue)
 }
